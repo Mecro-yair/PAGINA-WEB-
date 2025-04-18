@@ -58,6 +58,32 @@ body {
   color: #e31e25;
 }
 
+/*SUBMENU*/
+.nav-item .submenu {
+  display: none;
+  position: absolute;
+  margin-left: -15px;
+  background-color:#e31e25;
+  min-width: 100px;
+  text-align: center;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
+
+.nav-item .submenu li {
+  list-style-type: none;
+}
+
+.nav-item .submenu li a {
+  display: block;
+}
+
+.nav-item .submenu li a:hover {
+  background-color: #f1f1f1;
+}
+
 /* BOTÓN MENÚ RESPONSIVE */
 .menu-icon {
   display: none;
@@ -427,6 +453,8 @@ body {
   .hero-content {
     padding: 0 1rem;
   }
+
+ 
 
 
   #oficinas .office-content {
