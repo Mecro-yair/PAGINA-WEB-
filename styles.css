@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+a:visited {
+  color: inherit; /* O puedes especificar cualquier color que prefieras */
+  text-decoration: none; /* Si también quieres quitar el subrayado */
+}
 
 body {
   background-color: #f9f9f9;
@@ -172,7 +176,7 @@ body {
 /* Oficinas */
 .offices-section {
   background: #fefefe;
-  padding: 4rem 2rem; /* Padding a los costados, igual que en contacto */
+  padding: 5rem 6rem; /* Ajuste de padding */
   margin-top: 80px;
   text-align: center;
 }
@@ -185,19 +189,19 @@ body {
 
 .office-content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Cambié de flex-end a space-between para una mejor distribución */
   align-items: center;
   flex-wrap: wrap;
 }
 
 .office-text {
-  width: 50%;
+  width: 45%; /* Reducido un poco para dar espacio */
   padding: 2rem;
   text-align: left;
 }
 
 .office-image {
-  width: 40%;
+  width: 45%; /* Ajusté la imagen para igualar el ancho con el texto */
 }
 
 .office-image img {
@@ -215,7 +219,7 @@ body {
 /* Servicios */
 .services-section {
   background: #1c1c1c;
-  padding: 4rem 2rem; /* Padding a los costados, igual que en contacto */
+  padding: 5rem 5rem;
   text-align: center;
   color: #f1f1f1;
 }
@@ -228,13 +232,13 @@ body {
 
 .service-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Cambié de flex-start a space-between para distribuir mejor */
   align-items: center;
   flex-wrap: wrap;
 }
 
 .service-image {
-  width: 40%;
+  width: 45%; /* Ajuste similar al de las oficinas */
 }
 
 .service-image img {
@@ -243,7 +247,7 @@ body {
 }
 
 .service-text {
-  width: 50%;
+  width: 45%; /* Iguala el ancho con la imagen */
   padding: 2rem;
   text-align: left;
 }
@@ -254,7 +258,6 @@ body {
   margin-bottom: 1rem;
   line-height: 2;
 }
-
 
 /* Contacto */
 .contact-section {
