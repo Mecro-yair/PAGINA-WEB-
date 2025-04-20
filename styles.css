@@ -1,12 +1,9 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
-a:visited {
-  color: inherit; /* O puedes especificar cualquier color que prefieras */
-  text-decoration: none; /* Si también quieres quitar el subrayado */
 }
 
 body {
@@ -15,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -43,6 +40,7 @@ body {
   text-decoration: none;
 }
 
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -56,38 +54,11 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
+.nav-links a:hover {
   color: #e31e25;
 }
 
-/* Submenu */
-.nav-item .submenu {
-  display: none;
-  position: absolute;
-  margin-left: -15px;
-  background-color: #e31e25;
-  min-width: 100px;
-  text-align: center;
-}
-
-.nav-item:hover .submenu {
-  display: block;
-}
-
-.nav-item .submenu li {
-  list-style-type: none;
-}
-
-.nav-item .submenu li a {
-  display: block;
-}
-
-.nav-item .submenu li a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Botón Menú Responsive */
+/* BOTÓN MENÚ RESPONSIVE */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -97,7 +68,7 @@ body {
   cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -160,24 +131,21 @@ body {
   margin-top: 2.5rem;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover {
   background-color: #c7181e;
 }
 
-/* Secciones */
+/* SECCIONES */
 .offices-section,
 .services-section,
 .contact-section {
-  padding: 4rem 5%;
+  padding: 4rem 2rem;
   margin-top: 80px;
 }
 
-/* Oficinas */
+/* OFICINAS */
 .offices-section {
   background: #fefefe;
-  padding: 5rem 6rem; /* Ajuste de padding */
-  margin-top: 80px;
   text-align: center;
 }
 
@@ -189,19 +157,19 @@ body {
 
 .office-content {
   display: flex;
-  justify-content: space-between; /* Cambié de flex-end a space-between para una mejor distribución */
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .office-text {
-  width: 45%; /* Reducido un poco para dar espacio */
+  width: 50%;
   padding: 2rem;
   text-align: left;
 }
 
 .office-image {
-  width: 45%; /* Ajusté la imagen para igualar el ancho con el texto */
+  width: 40%;
 }
 
 .office-image img {
@@ -216,10 +184,9 @@ body {
   line-height: 2;
 }
 
-/* Servicios */
+/* SERVICIOS */
 .services-section {
   background: #1c1c1c;
-  padding: 5rem 5rem;
   text-align: center;
   color: #f1f1f1;
 }
@@ -232,13 +199,13 @@ body {
 
 .service-content {
   display: flex;
-  justify-content: space-between; /* Cambié de flex-start a space-between para distribuir mejor */
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .service-image {
-  width: 45%; /* Ajuste similar al de las oficinas */
+  width: 40%;
 }
 
 .service-image img {
@@ -247,7 +214,7 @@ body {
 }
 
 .service-text {
-  width: 45%; /* Iguala el ancho con la imagen */
+  width: 50%;
   padding: 2rem;
   text-align: left;
 }
@@ -259,64 +226,16 @@ body {
   line-height: 2;
 }
 
-/* Contacto */
+/* CONTACTO */
 .contact-section {
-  position: relative;
+  background-color: #e9f0fa;
   text-align: center;
-  padding: 6rem 5%;
-  margin-top: 80px;
-  color: #fff;
-  min-height: 500px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.contact-section.default-bg {
-  background-image: url('imagenes/fondo-contacto.jpg');
-}
-
-.contact-section#contacto-tacna {
-  background-image: url('imagenes/fondo-tacna.jpg');
-}
-
-.contact-section#contacto-ilo {
-  background-image: url('imagenes/fondo-ilo.jpg');
-}
-
-.contact-section#contacto-arequipa {
-  background-image: url('imagenes/fondo-arequipa.jpg');
-}
-
-.contact-section#contacto-moquegua {
-  background-image: url('imagenes/fondo-moquegua.jpg');
-}
-
-/* Oscurecer fondo para mejor lectura */
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-/* Contenido encima del overlay */
-.contact-section h2,
-.contact-container {
-  position: relative;
-  z-index: 2;
 }
 
 .contact-section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #222;
 }
 
 .contact-container {
@@ -338,7 +257,7 @@ body {
 
 .contact-info p {
   font-size: 1.2rem;
-  color: #fff;
+  color: #444;
   margin-bottom: 1rem;
   line-height: 2;
 }
@@ -354,7 +273,7 @@ body {
   border: 0;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   background-color: #1a1a1a;
   color: #f1f1f1;
@@ -393,8 +312,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.footer-socials a:hover,
-.footer-socials a:focus {
+.footer-socials a:hover {
   color: #e31e25;
 }
 
@@ -420,8 +338,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover,
-.footer-links a:focus {
+.footer-links a:hover {
   color: #e31e25;
 }
 
@@ -440,7 +357,18 @@ body {
   padding-top: 1rem;
 }
 
-/* Responsive */
+/* agregar estilo a BLUE-PROJECT*/
+.project{
+color: #aaa;
+text-decoration : none; 
+transition: color 0.3s ease;
+}
+/* color al pasar el mouse*/
+.project:hover{
+  color:#f1f1f1;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -448,15 +376,18 @@ body {
     padding-right: 1rem;
   }
 
+
   .hero .btn-primary {
-    font-size: 1.06rem !important;
-    padding: 0.5rem 1rem !important;
+    font-size: 1.06rem !important; 
+    padding: 0.5rem 1rem !important; 
     width: auto !important;
-    max-width: 250px;
+    max-width: 250px; 
     text-align: center;
     margin-top: 1rem;
   }
 
+
+  
   .nav-links {
     position: absolute;
     top: 80px;
@@ -479,10 +410,12 @@ body {
     padding: 0.5rem 0;
   }
 
+
   .navbar {
     flex-direction: row;
     justify-content: space-between;
   }
+
 
   .hero {
     padding-top: 1rem;
@@ -506,6 +439,65 @@ body {
     padding: 0 1rem;
   }
 
+
+  #oficinas .office-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem; 
+  }
+
+  #oficinas .office-text,
+  #oficinas .office-image {
+    width: 100%;
+    max-width: 1000px; 
+  }
+
+  #oficinas .office-text {
+    padding: 0 1rem; 
+    text-align: justify;
+  }
+
+  #oficinas .office-image {
+    padding: 0 1rem;
+  }
+
+  #oficinas h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
+  #servicios .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem; 
+  }
+
+  #servicios .service-text,
+  #servicios .service-image {
+    width: 100%;
+    max-width: 1000px; 
+  }
+
+  #servicios .service-text {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  #servicios .service-image {
+    padding: 0 1rem;
+  }
+
+  #servicios h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Contacto */
   .contact-info {
     margin: 0 auto;
     text-align: justify;
@@ -520,6 +512,7 @@ body {
     padding: 1rem;
   }
 
+  /* Footer */
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -528,4 +521,10 @@ body {
   .footer-socials a {
     margin: 0 0.5rem;
   }
+}
+//numero de contacto enlaza a whatsap
+.numero{
+  grid-template-columns: 1fr;
+    text-align: center;
+    color:white;
 }
